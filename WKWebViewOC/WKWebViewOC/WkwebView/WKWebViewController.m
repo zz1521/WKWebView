@@ -84,7 +84,7 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
 }
 
 -(void)customBackItemClicked{
-    if (self.wkWebView.goBack) {
+    if (self.wkWebView.canGoBack) {
         [self.wkWebView goBack];
     }else{
         [self.navigationController popViewControllerAnimated:YES];
